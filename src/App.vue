@@ -1,18 +1,17 @@
 <template>
-  <router-view />
+  <Header />
+  <div class="content">
+    <router-view />
+  </div>
 </template>
 
 <script setup lang="ts">
-
+import Header from '_c/Header/index.vue'
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="less">
+.content {
+  width: 100%;
+  height: calc(100% - 5rem);
 }
 </style>
