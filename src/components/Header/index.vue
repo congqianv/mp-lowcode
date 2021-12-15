@@ -1,11 +1,11 @@
 <template>
-  <header class="header">
+  <header class="header flex-space-between">
     <nav class="site-title" href="/">
       <a href="/">小程序在线制作</a>
     </nav>
   </header>
   <!-- 占位 -->
-  <div class="header-placeholder"></div>
+  <header class="header-placeholder"></header>
 </template>
 
 <script setup>
@@ -19,18 +19,15 @@
   left: 0;
   z-index: 10;
   width: 100%;
-  height: 5rem;
+  height: 60px;
   background: #fff;
-  box-shadow: 0 0.4167rem 0.8333rem 0 #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2.5rem;
+  box-shadow: 0 5px 10px 0 #eee;
+  padding: 0 30px;
 
   .site-title {
     width: fit-content;
     font-family: site-title;
-    font-size: 2.5rem;
+    font-size: 30px;
     color: #57606f;
 
     a {
@@ -42,6 +39,6 @@
 
 .header-placeholder {
   width: 100%;
-  height: 5rem;
+  height: 60px;
 }
 </style>
